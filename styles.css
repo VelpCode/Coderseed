@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+
+
+
+body {
+
+
+    font-family: 'Azeret Mono', monospace;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
