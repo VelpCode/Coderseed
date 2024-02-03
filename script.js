@@ -1,16 +1,16 @@
 
 
-const changItem = document.querySelector("click");
-
-
-
-function AddNew() {
 
 
 
 
-    
 
+    document.addEventListener('DOMContentLoaded', function() {
 
+        var clickSection = document.querySelector('.click');
+        clickSection.addEventListener('click', function() {
+            clickSection.textContent = "New tip loading..."
 
-} 
+        })
+
+    })

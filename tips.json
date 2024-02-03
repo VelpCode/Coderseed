@@ -1,0 +1,10 @@
+[
+    "Always declare local variables with let or const.",
+    "Use === instead of == to avoid type coercion and unexpected results.",
+    "Functions are first-class objects in JavaScript.",
+    "Use arrow functions for concise syntax and to avoid issues with this.",
+    "Use template literals to easily create complex strings.",
+    "Async/await makes asynchronous code cleaner and easier to read.",
+    "Use destructuring to extract values from arrays or objects.",
+    "argument object created with any arguments"
+]
