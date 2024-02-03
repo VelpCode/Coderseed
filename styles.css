@@ -24,3 +24,11 @@ h1 {
     font-weight: bolder;
 }
 
+.generatesec {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+
+}
