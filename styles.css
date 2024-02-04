@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/JetBrainsMono-Regular.woff') format('woff'), /* Older Browsers */
+         url('fonts/JetBrainsMono-Regular.ttf') format('truetype'); /* Oldest Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
 
-
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+         url('fonts/JetBrainsMono-Bold.woff') format('woff'),
+         url('fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 body {
-
 
     font-family: 'Azeret Mono', monospace;
     font-family: 'Inter', sans-serif;
@@ -30,9 +44,15 @@ body {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bolder;
-    margin: 0; 
+    background: -webkit-linear-gradient(left, grey, black); /* For Safari 5.1 to 6.0 */
+    background: linear-gradient(to right, grey, black); /* Standard syntax */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; /* Make the text color transparent so the gradient shows through */
+    display: inline-block;
+    margin: 0px; 
 }
 
 .generatesec {
@@ -40,6 +60,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
     min-height: 50vh;
 
 }
@@ -57,6 +78,12 @@ h1 {
 
       0 16px 16px hsl(0deg 0% 0% / 0.075)
     ;
-    font-weight: bolder;
+    font-weight: ;
     text-align: center;
+}
+
+.subheadin {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #888888;
 }
