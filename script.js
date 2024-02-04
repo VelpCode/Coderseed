@@ -1,4 +1,11 @@
 
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const clickSele 
+
+})
+
 async function fetchTips() {
     try {
 
@@ -11,4 +18,13 @@ async function fetchTips() {
 
     clickSection.textContent = randomTip;
 
-} catch(error) 
+} catch(error) {
+
+    console.error('Failed to fetch tips: ', error);
+    clickSection.textContent = 'Failed to load a tip. Try again';
+
+    }
+}
+
+clickSection.addEventListener('click', fetchTipsAndDisplay);
+
