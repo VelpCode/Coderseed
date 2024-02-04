@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    const clickSele 
+    const clickSelect = document.querySelector('.click');
 
 })
 
