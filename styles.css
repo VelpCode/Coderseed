@@ -98,3 +98,9 @@ h1 {
     align-items: center;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-image: none; /* Remove the background image on phone screens */
+    }
+}
