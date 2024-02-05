@@ -1,39 +1,31 @@
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const generatesec = document.querySelector('.generatesec');
-    const clickDiv = document.querySelector('.click');
 
-    // Function to load questions and answers from qanda.json
-    async function loadFlashcards() {
+
+    const clickSelection = document.querySelector('.click') //selection .click class from HTML DOM
+
+
+    async function fetchTipsAndDisplay() {
+
         try {
-            const response = await fetch('qanda.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                //fetch tips from the json file
+            const response = await fetch('tips.json');
+            if(!response.ok) {
+                throw new Error('Network response was not ok')
             }
-            const flashcards = await response.json();
+            const tips = await response.json();
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
 
-            let currentCard = 0;
+            clickSelection.textContent = randomTip;
 
-            // Initially load the first question
-            if (flashcards.flashcards.length > 0) {
-                clickDiv.textContent = flashcards.flashcards[currentCard].question;
-            }
-
-            generatesec.addEventListener('click', function() {
-                // Check if showing question or answer
-                if (clickDiv.textContent === flashcards.flashcards[currentCard].question) {
-                    // Show answer
-                    clickDiv.textContent = flashcards.flashcards[currentCard].answer;
-                } else {
-                    // Move to next question or loop back to the first question
-                    currentCard = (currentCard + 1) % flashcards.flashcards.length;
-                    clickDiv.textContent = flashcards.flashcards[currentCard].question;
-                }
-            });
-        } catch (error) {
-            console.error("Could not load flashcards:", error);
-            clickDiv.textContent = "Failed to load content, please check the console for more information.";
+        } catch(error) {
+            console.error("failed to fetch tips:", error);
+            clickSelection.textContent = "Failed to load a tip. Try again!"
         }
+
     }
 
-    loadFlashcards();
+    clickSelection.addEventListener('click', fetchTipsAndDisplay);
 });

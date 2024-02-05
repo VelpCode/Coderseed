@@ -81,7 +81,12 @@ h1 {
     ;
     cursor: pointer;
     text-align: center;
-    transform: ;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.click:hover {
+    transform: scale(1.1); 
 }
 
 .subheadin {
