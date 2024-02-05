@@ -79,8 +79,9 @@ h1 {
 
       0 16px 16px hsl(0deg 0% 0% / 0.075)
     ;
-    font-weight: ;
+    cursor: pointer;
     text-align: center;
+    transform: ;
 }
 
 .subheadin {

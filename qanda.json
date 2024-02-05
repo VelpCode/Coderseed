@@ -1,0 +1,44 @@
+{
+    "flashcards": [
+      {
+        "question": "What is the purpose of JavaScript?",
+        "answer": "JavaScript is used to create interactive effects within web browsers, enabling the development of rich web applications."
+      },
+      {
+        "question": "How can you declare a variable in JavaScript?",
+        "answer": "You can declare a variable in JavaScript using the var, let, or const keywords."
+      },
+      {
+        "question": "What is a function in JavaScript?",
+        "answer": "A function in JavaScript is a block of code designed to perform a particular task. It is executed when something invokes it (calls it)."
+      },
+      {
+        "question": "What is the difference between == and === in JavaScript?",
+        "answer": "== compares only values, while === compares both values and types."
+      },
+      {
+        "question": "How do you add an element to the beginning of an array in JavaScript?",
+        "answer": "You can add an element to the beginning of an array in JavaScript using the unshift() method."
+      },
+      {
+        "question": "What is a promise in JavaScript?",
+        "answer": "A promise in JavaScript is an object representing the eventual completion or failure of an asynchronous operation."
+      },
+      {
+        "question": "How can you prevent a form from being submitted using JavaScript?",
+        "answer": "You can prevent a form from being submitted using JavaScript by calling the preventDefault() method on the event object in the form's submit event handler."
+      },
+      {
+        "question": "What is event bubbling in JavaScript?",
+        "answer": "Event bubbling is a type of event propagation in the HTML DOM where an event starts from the target element and bubbles up to the parent elements."
+      },
+      {
+        "question": "What is the use of the isNaN function?",
+        "answer": "The isNaN function is used to determine whether a value is an illegal number (Not-a-Number)."
+      },
+      {
+        "question": "How do you convert a string into an integer in JavaScript?",
+        "answer": "You can convert a string into an integer in JavaScript using the parseInt() function."
+      }
+    ]
+  }
